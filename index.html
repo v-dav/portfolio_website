@@ -15,23 +15,119 @@
 
 		<!--==================== CUSTOM CSS ====================-->
 		<link rel="stylesheet" href="./assets/css/styles.css">
-		<title>Vladimir Portfolio Website</title>
+		<title>Vladimir Davidov - Portfolio Website</title>
 	</head>
 	<body>
 		<!--==================== HEADER ====================-->
 		<header>
+			<div>
+				<a href="#">Vladimir</a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="https://medium.com/@v-dav">Blog</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
 
 		</header>
 		<!--==================== MAIN ====================-->
 		<main>
+			<!--==================== HOME ====================-->
+			<section>
+				<div>
+					<h1>Hi, <br> I'm Vladimir <br> Full-Stack Developer </h1>
+					<a href="#contact" class="button">Contact</a>
+				</div>
+				<div>
+					<a href="https://www.linkedin.com/in/v-dav/"><i></i></a>
+					<a href="https://github.com/v-dav"><i></i></a>
+				</div>
+				<div>
+					<svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<mask id="mask0" mask-type="alpha">
+						    <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+						</mask>
+						<g mask="url(#mask0)">
+						    <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+						    <image class="home__blob-img" x="50" y="60" href="./assets/img/profile1.png"/>
+						</g>
+					    </svg>
+				</div>
+			</section>
 
+
+			<!--==================== ABOUT ====================-->
+			<section>
+				<h2>About</h2>
+				<div>
+					<div>
+						<img src="assets/img/about.png" alt="Profile Photo">
+					</div>
+					<div>
+						<h2>I'm Vladimir</h2>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
+
+					</div>
+				</div>
+			</section>
+
+			<!--==================== SKILLS ====================-->
+			<section>
+				<h2>Skills</h2>
+				<div>
+					<h2>Professional Skills</h2>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
+					<div class="skills_data"></div>
+					<div>              
+						<img src="./assets/img/skills.jpg" alt="Skills Image" class="skills__img">
+					</div>
+				</div>
+			</section>
+
+			<!--==================== WORK ====================-->
+			<section>
+				<h2>Work</h2>
+				<div>
+					<a href=""><img src="" alt=""></a>
+					<a href=""><img src="" alt=""></a>
+					<a href=""><img src="" alt=""></a>
+					<a href=""><img src="" alt=""></a>
+					<a href=""><img src="" alt=""></a>
+					<a href=""><img src="" alt=""></a>
+				</div>
+			</section>
+
+			<!--==================== CONTACT ====================-->
+			<section>
+				<h2>Contact</h2>
+				<div>
+					<form action="">
+						<input type="text" placeholder="Name">
+						<input type="mail" placeholder="Email">
+						<textarea name="" id="" cols="0" rows="10"></textarea>
+						<input type="button" value="Send">
+					</form>
+				</div>
+			</section>
 		</main>
 		<!--==================== FOOTER ====================-->
 		<footer>
-	
+			<p>Vladimir</p>
+			<div>
+				<a href="https://twitter.com/v_dav_dev"><i></i></a>
+				<a href="https://www.linkedin.com/in/v-dav/"><i></i></a>
+				<a href="https://medium.com/@v-dav"><i></i></a>
+				<a href="https://github.com/v-dav"><i></i></a>
+			</div>
 		</footer>
-		<!--==================== SWIPE ====================-->
-
+		<!--==================== SWIPE/SCROLL REVEAL ====================-->
+		<script src="https://unpkg.com/scrollreveal"></script>
+		
 		<!--==================== MAIN JS ====================-->
 		<script src="./assets/js/main.js"></script>
 	</body>
