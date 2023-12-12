@@ -1,2 +1,22 @@
 /* import fonts from fonts.css file */
 @import url(./fonts.css);
+
+/*CSS variables*/
+@import url(./partials/_variables.css);
+
+/* start navigation */
+/* .header_area .main_menu .navbar .navbar-brand {
+	padding: 0 2rem 0 5rem;
+} */
+
+.header_area .main_menu .navbar {
+	padding: 1rem 10rem;
+}
+
+.header_area .main_menu .nav-item .nav-link {
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 1.7 rem;
+	color: var(--title-color);
+}
+/* end navigation */
