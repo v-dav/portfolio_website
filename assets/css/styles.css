@@ -19,4 +19,23 @@
 	padding: 1.7 rem;
 	color: var(--title-color);
 }
+
+.nav-item {
+	margin: 0 15px;
+}
+
+.navbar-brand {
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--title-color);
+}
+
+.header_area .main_menu .navbar-nav a:hover {
+	background: var(--gradient-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
 /* end navigation */
