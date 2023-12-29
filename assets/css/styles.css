@@ -50,6 +50,8 @@
 
 html {
 	scroll-behavior: smooth;
+	background: url(../img/background.png);
+	background-size: 100%;
 }
 
 body {
@@ -73,11 +75,6 @@ ul {
 
 a {
 	text-decoration: none;
-}
-
-html {
-	background: url(../img/background.png);
-	background-size: 100%;
 }
 
 /*=====IMAGE RESPONSIVENESS========*/
@@ -591,4 +588,20 @@ img {
 	.home__img {
 		width: 450px;
 	}
+}
+
+
+.barre::after {
+	content: "";
+	height: 2px;
+	width: 4.5em;
+	background: black;
+	display: inline-block;
+	margin-left: 2%;
+}
+
+.cv {
+	margin-top: 10px;
+	display: flex;
+	justify-content: end;
 }
