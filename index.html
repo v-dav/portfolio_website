@@ -221,11 +221,11 @@
 		<section class="contact section" id="contact">
 			<h2 class="section-title">Contact</h2>
 			<div class="contact__container bd-grid">
-				<form class="contact__form" id="contact__form">
+				<form class="contact__form" id="contact__form" onsubmit="emailSend(); return false;">
 					<input type="text" name="name" id="name" placeholder="Name" class="contact__input" required>
 					<input type="email" name="email" id="email" placeholder="Email" class="contact__input" required>
 					<textarea name="message" id="message" cols="0" rows="10" class="contact__input" placeholder="Message" required></textarea>
-					<input type="button" value="Send" class="contact__button button" onclick="sendEmail()">
+					<input type="submit" value="Send" class="contact__button button">
 				</form>
 			</div>
 		</section>
