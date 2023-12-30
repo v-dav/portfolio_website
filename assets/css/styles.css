@@ -380,6 +380,10 @@ img {
 }
 
 /* ========================= CONTACT =====================*/
+.contact__form {
+	
+}
+
 .contact__input {
 	width: 100%;
 	font-size: var(--normal-font-size);
@@ -604,4 +608,17 @@ img {
 	margin-top: 40px;
 	display: flex;
 	justify-content: end;
+}
+
+.swal-overlay {
+	background-color: rgba(43, 165, 137, 0.45);
+}
+
+.swal-button {
+	background-color: var(--first-color);
+	color: #fff;
+	padding: .75rem 2.5rem;
+	font-weight: var(--font-semi);
+	border-radius: .5rem;
+	transition: all .3s;
 }
