@@ -75,7 +75,13 @@ function emailSend() {
 		<br>
 		${data.get('message')}`
 }).then(
-			message => alert(message)
+	message => {
+		if (message === 'OK') {
+			swal("I've got your message!", "Thank you.", "success");
+		} else {
+			swal("Error!", "Try again.", "error");
+		}
+			}
 		);
 }
 
