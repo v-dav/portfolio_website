@@ -62,9 +62,16 @@ function emailSend() {
 		From: "vdmailx@gmail.com",
 		Subject: "Portfolio Website - New message",
 		Body: `There's a new message from a visitor of your portfolio website.<br>
-		His email is: ${data.get('email')}.<br>
-		His name is: ${data.get('name')}.<br>
-		His message is the following ${data.get('message')}`
+		His email is: ${data.get('email')}.
+		<br>
+		<br>
+		His name is: ${data.get('name')}.
+		<br>
+		<br>
+		His message is the following:
+		<br>
+		<br>
+		${data.get('message')}`
 }).then(
 			message => alert(message)
 		);
