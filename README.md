@@ -43,7 +43,8 @@ The website is designed to provide visitors with a comprehensive understanding o
 
 ## 🌅 Preview
 
-[a screenshot demonstrating how the portfolio website looks.]
+<img width="1416" alt="Skärmavbild 2023-12-30 kl  17 57 30" src="https://github.com/v-dav/portfolio_website/assets/115344057/5adaee4a-e99d-4212-a4f9-5e13ac66d41f">
+
 
 ## 🍰 Contributing    
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
