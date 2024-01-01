@@ -52,6 +52,7 @@ html {
 	scroll-behavior: smooth;
 	background: url(../img/background.png);
 	background-size: 100%;
+	background-attachment: fixed;
 }
 
 body {
