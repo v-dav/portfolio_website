@@ -55,9 +55,7 @@ function emailSend() {
 	const data = new FormData(form)
 
 	Email.send({
-		Host: "smtp.elasticemail.com",
-		Username: "vdmailx@gmail.com",
-		Password: "0D6855CFA7B73D3E957B0664286FAEAE2B67",
+		SecureToken: "5853d2ec-06dd-4d5a-8445-b16edac445ac",
 		To: 'vladimir.davidov.pro@gmail.com',
 		From: "vdmailx@gmail.com",
 		Subject: "Portfolio Website - New message",
