@@ -508,9 +508,16 @@ img {
 	}
 }
 
+@media screen and (min-width: 497px) {
+	.home__img {
+		width: 250px;
+		top: 250px;
+	}
+}
+
 @media screen and (min-width: 576px) {
 	.home {
-		padding: 4rem 0 2rem;
+		padding: 4rem 0 12rem;
 	}
 
 	.home__social {
@@ -533,7 +540,12 @@ img {
 	.about__container {
 		grid-template-columns: repeat(2, 1fr);
 		align-items: center;
-		text-align: initial;
+		text-align: center;
+		margin-top: 4rem;
+	}
+
+	.about__img {
+		margin: 0 1.5rem;
 	}
 
 	.skills__container {
@@ -635,11 +647,19 @@ img {
 	}
 }
 
-@media screen and (min-width: 992px) {
-	.bd-grid {
-		margin-left: auto;
-		margin-right: auto;
+@media screen and (min-width: 850px) and (max-width: 967px) {
+	.home__title {
+		font-size: 2rem;
 	}
+}
+
+@media screen and (min-width: 968px) {
+	.home__title {
+		font-size: 2.5rem;
+	}
+}
+
+@media screen and (min-width: 992px) {
 
 	.home {
 		padding: 10rem 0 2rem;
@@ -647,5 +667,22 @@ img {
 
 	.home__img {
 		width: 450px;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1100px) {
+	.home__img {
+		width: 375px;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.bd-grid {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.home__title {
+		font-size: 3.5rem;
 	}
 }
