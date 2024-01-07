@@ -52,38 +52,32 @@ sr.reveal('.skills__data, .work__img, .contact__input', { interval: 200 });
 /*========= SEND EMAIL FROM THE FORM AND RETURN TO HOME SECTION ===========*/
 function emailSend() {
 	const form = document.getElementById("contact__form");
-	const data = new FormData(form)
+	const data = new FormData(form);
+	const submitBtn = document.getElementById("submitBtn");
 
-	Email.send({
-		SecureToken: "5853d2ec-06dd-4d5a-8445-b16edac445ac",
-		To: 'vladimir.davidov.pro@gmail.com',
-		From: "vdmailx@gmail.com",
-		Subject: "Portfolio Website - New message",
-		Body: `There's a new message from a visitor of your portfolio website.
-		<br>
-		<br>
-		His name is: ${data.get('name')}.
-		<br>
-		<br>
-		His email is: ${data.get('email')}.
-		<br>
-		<br>
-		His message is the following:
-		<br>
-		<br>
-		${data.get('message')}`
-}).then(
-	message => {
-		if (message === 'OK') {
-			swal("I've got your message!", "Thank you.", "success");
-		} else {
-			swal("Error!", "Try again.", "error");
-		}
+	submitBtn.classList.add("loading");
+
+	setTimeout(() => {
+		Email.send({
+			SecureToken: "5853d2ec-06dd-4d5a-8445-b16edac445ac",
+			To: 'vladimir.davidov.pro@gmail.com',
+			From: "vdmailx@gmail.com",
+			Subject: "Portfolio Website - New message",
+			Body: `There's a new message from a visitor of your portfolio website.
+			<br><br><b>His name is:</b> ${data.get('name')}.
+			<br><br><b>His email is:</b> ${data.get('email')}.
+			<br><br><b>His message is the following:</b>
+			<br><br>${data.get('message')}`
+		}).then(
+			message => {
+				submitBtn.classList.remove("loading");
+				if (message === 'OK') {
+					swal("I've got your message!", "Thank you.", "success");
+					form.reset();
+				} else {
+					swal("Error!", "Try again.", "error");
+				}
 			}
 		);
+	}, 5000)
 }
-
-document.getElementById("contact__form").addEventListener("submit", function (event) {
-	event.preventDefault();
-	this.reset();
-})
