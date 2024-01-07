@@ -55,7 +55,12 @@ function emailSend() {
 	const data = new FormData(form);
 	const submitBtn = document.getElementById("submitBtn");
 
-	submitBtn.classList.add("loading");
+	const spinnerIcon = document.createElement("i");
+  spinnerIcon.className = "spinner fa-solid fa-spinner fa-spin fa-xl";
+	spinnerIcon.style.color = "#ffffff";
+	
+	submitBtn.innerText = "Sending... ";
+  submitBtn.appendChild(spinnerIcon);
 
 	setTimeout(() => {
 		Email.send({
@@ -70,13 +75,14 @@ function emailSend() {
 			<br><br>${data.get('message')}`
 		}).then(
 			message => {
-				submitBtn.classList.remove("loading");
 				if (message === 'OK') {
 					swal("I've got your message!", "Thank you.", "success");
 					form.reset();
 				} else {
 					swal("Error!", "Try again.", "error");
 				}
+				submitBtn.removeChild(spinnerIcon);
+				submitBtn.innerText = "Send";
 			}
 		);
 	}, 5000)
