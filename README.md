@@ -28,6 +28,7 @@ The website is designed to provide visitors with a comprehensive understanding o
 4. **Contact**: Provide multiple ways for visitors to reach out to me, such as email, LinkedIn, or other social media platforms.
 5. **Blog**: Redirects visitors to my blog page at Medium.
 6. **Download CV**: Allows visitors to download my latest Curriculum Vitae in PDF format.
+7. **Fully Responsive**: Displays with a responsive layout depending on the device width
 
 ## 🧑🏻‍💻 How to Use
 
