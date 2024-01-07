@@ -482,12 +482,9 @@ img {
 	transition: all .3s;
 }
 
-#submitBtn.loading {
-	/* Ajoutez ici vos styles d'animation pendant le chargement */
-	/* Par exemple, une rotation */
-	transform: rotate(360deg);
-	transition: transform 1s ease-in-out; /* Animation de transition */
-      }
+.spinner {
+	margin-left: 0.5rem;
+}
 
 /* ========================= MEDIA QUERIES =====================*/
 @media screen and (min-width: 320px) {
