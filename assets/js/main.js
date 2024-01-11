@@ -85,5 +85,5 @@ function emailSend() {
 				submitBtn.innerText = "Send";
 			}
 		);
-	}, 2500)
+	}, 1500)
 }
