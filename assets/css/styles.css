@@ -230,7 +230,7 @@ img {
 
 .home__social-icon {
 	width: max-content;
-	margin-bottom: var(--mb-2);
+	margin-bottom: 32px;
 	font-size: 1.5rem;
 	color: var(--second-color);
 }
