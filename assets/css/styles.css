@@ -391,8 +391,8 @@ img {
 }
 
 /* ========================= CONTACT =====================*/
-.contact__form {
-	
+.contact p {
+	text-align: center;
 }
 
 .contact__input {
@@ -507,6 +507,10 @@ img {
 	.cv {
 		justify-content: center;
 	}
+
+	.contact__form {
+		padding-top: 2rem;
+	}
 }
 
 @media screen and (min-width: 411px) {
@@ -571,7 +575,6 @@ img {
 
 	.contact__form {
 		width: 360px;
-		padding-top: 2rem;
 	}
 
 	.contact__container {
