@@ -571,6 +571,10 @@ img {
 		margin-top: 4rem;
 	}
 
+	.about__text {
+		text-align: start;
+	}
+
 	.about__img {
 		margin: 0 1.5rem;
 	}
@@ -664,7 +668,7 @@ img {
 		grid-template-columns: repeat(2, 1fr);
 		column-gap: 2rem;
 		align-items: center;
-		text-align: initial;
+		text-align: start;
 	}
 
 	.work__container {
