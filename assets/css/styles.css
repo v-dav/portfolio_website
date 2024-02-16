@@ -302,6 +302,7 @@ img {
 
 .skills__subtitle {
 	margin-bottom: var(--mb-2);
+	text-align: center;
 }
 
 .skills__text {
@@ -572,7 +573,7 @@ img {
 	}
 
 	.about__text {
-		text-align: start;
+		text-align: justify;
 	}
 
 	.about__img {
@@ -668,7 +669,7 @@ img {
 		grid-template-columns: repeat(2, 1fr);
 		column-gap: 2rem;
 		align-items: center;
-		text-align: start;
+		text-align: justify;
 	}
 
 	.work__container {
