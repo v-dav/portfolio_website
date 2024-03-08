@@ -508,6 +508,12 @@ img {
 	}
 }
 
+@media screen and (max-width: 576px) {
+	.cv {
+		flex-direction: column;
+	}
+}
+
 @media screen and (min-width: 320px) {
 	.home {
 		row-gap: 2rem;
@@ -520,7 +526,8 @@ img {
 	}
 
 	.cv {
-		justify-content: center;
+		justify-content: space-evenly;
+		gap: 10px;
 	}
 
 	.contact__form {
