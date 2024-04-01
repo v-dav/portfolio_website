@@ -193,6 +193,7 @@ img {
 	gap: 10px;
 }
 
+
 /*Active menu*/
 .active::after {
 	position: absolute;
@@ -639,6 +640,10 @@ img {
 	.nav__item {
 		margin-left: var(--mb-6);
 		margin-bottom: 0;
+	}
+
+	.lang {
+		margin-left: 1.5rem;
 	}
 
 	.nav__toggle {
